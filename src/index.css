@@ -12,8 +12,9 @@
 
   /* Colors */
   --black-500: hsla(0, 0%, 18%, 1);
-  --bg-gray: rgba(245, 245, 245, 0.881);
+  --bg-gray: hsla(0, 0%, 97%, 1);
   --blue-400: hsla(203, 60%, 71%, 1);
+  --blue-700: hsla(201, 43%, 46%, 1);
 
   --blue-btn: rgba(98, 161, 235, 1);
   --blue-btn-hover: rgba(49, 122, 208, 1);
@@ -38,6 +39,21 @@
   box-sizing: border-box;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.w-1 {
+  width: 100%;
+}
+
+.j-b {
+  justify-content: space-between;
+}
+
 body {
   margin: 0;
   /* display: flex;
@@ -57,6 +73,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 3rem 6rem 2rem 6rem;
+  gap: 1rem;
 }
 
 .form__card-select {
@@ -74,7 +91,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .input-flex,
@@ -123,6 +140,7 @@ body {
 /* ---------------- */
 
 input {
+  width: 100%;
   height: 60px;
   font-size: 1rem;
   border: 2px solid var(--blue-400);
@@ -143,6 +161,28 @@ input:focus {
 
 .error-text {
   color: var(--error-red) !important;
+}
+
+
+/* ------------------------------------------------ */
+
+.upload__photo {
+  background-color: var(--bg-gray);
+  width: 878px;
+  height: 423px; 
+  border: 2px dashed var(--blue-700);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.upload__photo p {
+  color: var(--blue-700);
+  font-size: 20px;
+  line-height: 36px;
 }
 
 
