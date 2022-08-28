@@ -4,7 +4,7 @@ const LaptopDetails = () => {
   return (
     <>
       <div className="form__card">
-        <div className="upload__photo">
+        <div className="upload__photo" style={{marginBottom: '3.125rem'}}>
           <p>ჩააგდე ან ატვირთე ლეპტოპის ფოტო</p>
           <button className="btn btn-blue">ატვირთე</button>
         </div>
@@ -28,7 +28,7 @@ const LaptopDetails = () => {
           </select>
         </div>
 
-        <hr />
+        <div className="horiz_line"></div>
 
         <div className="flex w-1">
           <select className="form__card-select">
@@ -97,6 +97,8 @@ const LaptopDetails = () => {
             </div>
           </div>
         </div>
+
+        <div className="horiz_line"></div>
 
         <div
           className="flex w-1"

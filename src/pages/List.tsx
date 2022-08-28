@@ -8,7 +8,8 @@ const List = () => {
           fontSize: "34px",
           lineHeight: "21px",
           fontWeight: 700,
-          marginBottom: "2rem",
+          marginTop: "4rem",
+          marginBottom: "5rem",
         }}
       >
         ჩანაწერების სია
@@ -23,7 +24,7 @@ const List = () => {
             <div className="list__card-details" style={{marginLeft: '1.75rem'}}>
               <p style={{fontSize: '18px', fontWeight: 500, marginBottom: '1rem'}}>ირინე ჩანქსელიანი</p>
               <p style={{fontSize: '18px', fontWeight: 400, marginBottom: '2rem'}}>Pentium II</p>
-              <a className="list__card-more">მეტის ნახვა</a>
+              <a href="#" className="list__card-more">მეტის ნახვა</a>
             </div>
           </div>
         ))}
