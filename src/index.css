@@ -11,8 +11,11 @@
   -webkit-text-size-adjust: 100%;
 
   /* Colors */
+  --black-400: hsla(0, 0%, 47%, 1); 
   --black-500: hsla(0, 0%, 18%, 1);
+
   --bg-gray: hsla(0, 0%, 97%, 1);
+
   --blue-300: hsl(205, 59%, 80%);
   --blue-400: hsla(203, 60%, 71%, 1);
   --blue-600: hsla(201, 50%, 53%, 1);
@@ -23,7 +26,6 @@
   --blue-btn-foucs: rgba(26, 93, 171, 1);
 
   --error-red: hsla(0, 78%, 54%, 1);
-
 }
 
 @font-face {
@@ -32,10 +34,12 @@
 }
 
 * {
-  font-family: 'Helvetica Neue';
+  font-family: "Helvetica Neue";
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -136,7 +140,6 @@ body {
   background-color: var(--blue-btn-focus);
 } */
 
-
 /* Inputs */
 /* ---------------- */
 
@@ -160,7 +163,6 @@ input:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-
 input[type="radio"] {
   width: 20px;
   height: 20px;
@@ -171,13 +173,12 @@ input[type="radio"] {
   color: var(--error-red) !important;
 }
 
-
 /* ------------------------------------------------ */
 
 .upload__photo {
   background-color: var(--bg-gray);
   width: 878px;
-  height: 423px; 
+  height: 423px;
   border: 2px dashed var(--blue-700);
   border-radius: 18px;
   display: flex;
@@ -185,6 +186,8 @@ input[type="radio"] {
   align-items: center;
   justify-content: center;
   gap: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 3.125rem;
 }
 
 .upload__photo p {
@@ -211,9 +214,9 @@ input[type="radio"] {
 .list__container {
   width: 100%;
   height: 100vh;
-  display: flex; 
+  display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .list__cards-wrapper {
@@ -223,7 +226,7 @@ input[type="radio"] {
 }
 
 .list__card {
-  background-color: #EAFAFF;
+  background-color: #eafaff;
   border: 1px solid var(--blue-300);
   border-radius: 20px;
   display: flex;
@@ -244,14 +247,12 @@ input[type="radio"] {
   text-decoration: underline;
 }
 
-
 .horiz_line {
   width: 100%;
   height: 1px;
   background-color: hsla(0, 0%, 78%, 1);
   margin: 1.5rem 0;
 }
-
 
 /* Top Pager */
 
@@ -280,4 +281,41 @@ input[type="radio"] {
   width: 100%;
   height: 2px;
   background-color: #000000;
+}
+
+.text-title {
+  font-size: 34px;
+  line-height: 21px;
+  font-weight: 700;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+/* Info Container - InnerPage */
+
+.info__container {
+  display: flex;
+  text-align: start;
+  width: 1178px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.text__labels div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.text__labels p {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--black-500);
+}
+
+.text__labels-info p {
+  color: var(--black-400)
+
 }

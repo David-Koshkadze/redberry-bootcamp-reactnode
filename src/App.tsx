@@ -1,17 +1,21 @@
-import TopPager from "./components/TopPager"
-import InfoPage from "./pages/InfoPage"
-import LaptopDetails from "./pages/LaptopDetails"
-import List from "./pages/List"
+import TopPager from "./components/TopPager";
+import HomePage from "./pages/HomePage";
+import InfoPage from "./pages/InfoPage";
+import InnerPage from "./pages/InnerPage";
+import LaptopDetails from "./pages/LaptopDetails";
+import List from "./pages/List";
 
 function App() {
   return (
     <>
-      <TopPager activeItem={1} />
+      {/* <HomePage /> */}
+      {/* <TopPager activeItem={1} /> */}
       {/* <InfoPage /> */}
-      <LaptopDetails />
+      {/* <LaptopDetails /> */}
       {/* <List /> */}
+      <InnerPage />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
